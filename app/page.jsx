@@ -1,7 +1,7 @@
 import ProjectsComponent from '@/app/components/projects'
-import Team from '@/app/components/team';
-import Services from '@/app/components/services';
-import Reach from '@/app/components/Reach';
+import Team from "@/app/components/team";
+import Services from "@/app/components/services";
+import Reach from "@/app/components/reach";
 import Link from 'next/link';
 
 export default function Home() {
