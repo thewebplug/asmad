@@ -1,6 +1,4 @@
-import Image from "next/image";
-import ProjectsComponent from "@/app/components/projects";
-import ProjectCard from "@/app/components/ProjectCard";
+import ProjectCard from "@/app/components/projectCard";
 
 export default function Projects() {
   return (
