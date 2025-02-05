@@ -1,0 +1,63 @@
+.clients {
+  padding: 20px 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  transition: 0.3s;
+  position: relative;
+
+  @media (max-width: $phone) {
+    padding: 0;
+    margin: 0 auto;
+    overflow-x: auto;
+  }
+
+  &__title {
+      @extend %title-40;
+      width: 100%;
+      max-width: 20ch;
+      margin-bottom: 60px;
+      margin-top: 40px;
+      
+      & > span {
+          color: #2D8E95;
+      }
+}
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    animation: marqueeX 30s linear infinite;
+    @media (max-width: $phone) {
+      height: fit-content;
+  }
+
+    //The idea for this animation is to find a point during the animation that looks like the beginning of the animation and restart the animation at that point. This gives the feel that the animation is endless. Kind of like when the end ov a video is exaclty the same as the beginnig. you would not know when you've started watching the video all over again
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    img {
+      min-width: 100px;
+      height: auto;
+      position: relative;
+
+    }
+    @keyframes marqueeX {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(
+          calc(-650px * var(--item-count) - (20px * var(--item-count)))
+        );
+      }
+    }
+  }
+}

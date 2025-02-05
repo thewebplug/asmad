@@ -1,8 +1,8 @@
-import Image from "next/image";
+import OptimizedImage from "./optimizedImage";
 
 export default function Reach() {
   return (
-    <div className="reach">
+    <div className="reach" id="reach">
       <div className="reach__group">
         <div className="reach__card1">
           <div className="reach__card1__subtitle">MORE ABOUT US</div>
@@ -20,9 +20,8 @@ export default function Reach() {
           <button>Contact us</button>
         </div>
         <div className="reach__card2">
-          <Image
-            src="/assets/building 3.jpg"
-            alt=""
+          <OptimizedImage alt=""
+            src="https://res.cloudinary.com/thewebplug/image/upload/v1738783642/building_5_xfmicu.jpg"
             layout="fill"
             objectFit="cover"
           />

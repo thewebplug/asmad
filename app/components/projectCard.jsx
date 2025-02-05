@@ -1,11 +1,11 @@
 "use client"
-import Image from "next/image";
+import OptimizedImage from "./optimizedImage";
 
 export default function ProjectCard({title, subtitle, date, image}) {
   return (
     <div className="projects__grid__card">
     <div className="projects__grid__card__cover">
-    <Image src={image} objectFit="cover" layout="fill" alt="" />
+    <OptimizedImage alt="" src={image} objectFit="cover" layout="fill" alt="" />
       <div className="projects__grid__card__cover__info">
         <div className="projects__grid__card__cover__info__title">
           Lorem ipsum
@@ -21,6 +21,7 @@ export default function ProjectCard({title, subtitle, date, image}) {
     </div>
 
     <div className="projects__grid__card__title">
+      {title}
     </div>
     <div className="projects__grid__card__subtitle">
       {subtitle}

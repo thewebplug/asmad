@@ -10,10 +10,16 @@
     line-height: 48px;
   }
 }
+%title-50 {
+  font-size: 50px;
+  font-weight: 800;
+  @media (max-width: 565px) {
+    font-size: 32px;
+  }
+}
 %title-48 {
   font-size: 48px;
   font-weight: 700;
-  font-family: var(--font-ojuju);
   @media (max-width: 565px) {
     font-size: 32px;
   }
@@ -21,7 +27,10 @@
 %title-40 {
   font-size: 40px;
   font-weight: 700;
-  color: rgba(36, 35, 35, 1);
+  line-height: 140%;
+  margin: 0 auto;
+  text-align: center;
+
 }
 
 %title-36 {
@@ -41,23 +50,19 @@
 
 %title-24 {
   font-size: 24px;
-  font-weight: 700;
-  color: rgba(36, 35, 35, 1);
+  font-weight: 900;
+  text-transform: uppercase;
 }
 %title-20 {
   font-size: 20px;
   font-weight: 400;
-  color: #fff;
-
-  @media (max-width: 565px) {
-    font-size: 16px;
-  }
+  line-height: 140%;
 }
 
 %title-18 {
   font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
+  font-weight: 500;
+  line-height: 140%;
 
   @media (max-width: 565px) {
     font-size: 16px;
@@ -71,6 +76,7 @@
 %title-14 {
   font-size: 14px;
   font-weight: 400;
+  line-height: 140%;
 }
 %title-12 {
   font-size: 12px;

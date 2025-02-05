@@ -18,12 +18,12 @@ textarea {
 
 
 
-%normal-input {
+%input {
     width: 100%;
   max-width: 400px;
   height: 40px;
   border-radius: var(--radius-md, 8px);
-  border: 1px solid var(--Colors-Border-border-primary, #D5D8D5);
+  border: 1px solid var(--Colors-Border-border-primary, #adb0ab);
   background: var(--Colors-Background-bg-primary, #FFF);
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   padding-left: 12px;

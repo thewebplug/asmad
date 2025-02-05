@@ -2,31 +2,20 @@ import ProjectsComponent from '@/app/components/projects'
 import Team from "@/app/components/team";
 import Services from "@/app/components/services";
 import Reach from "@/app/components/reach";
-import Link from 'next/link';
+import WhyChooseUs from './components/whyChooseUs';
+import VisionAndMission from './components/visionAndMission';
+import Clients from './components/clients';
+import ContactUs from './components/contactUs';
+import Header from './components/header';
 
 export default function Home() {
   return (
     <>
+          <Header />
+
     <main className='home'>
 
       
-
-      <div className="home__header">
-        <div className="home__header__logo">
-          Logo
-        </div>
-        <nav>
-          <Link href="#">Home</Link>
-          <Link href="#">About</Link>
-          <Link href="#">Services</Link>
-          <Link href="#">Reach</Link>
-          <Link href="#">Our Team</Link>
-        </nav>
-
-        <div className="home__header__buttons">
-          <button>Contact us</button>
-        </div>
-      </div>
       <div className="home__hero">
         <div className="home__hero__background">
 
@@ -42,15 +31,18 @@ export default function Home() {
         </div>
         </div>
       </div>
-      <ProjectsComponent />
+
       <Services />
+      <ProjectsComponent />
+      <Clients />
+      <WhyChooseUs />
       <Reach />
-      <Team />
+      <VisionAndMission />
+       <Team />
+      <ContactUs /> 
+     
     </main>
 
-    <div className="mobile">
-      Not available on mobile yet
-    </div>
     </>
   );
 }

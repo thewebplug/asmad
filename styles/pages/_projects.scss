@@ -1,22 +1,23 @@
 .projects {
     padding: 100px 0;
 
-    @media (max-width: $tablet-pro) {
-        display: none;
-    }
 
     &__title {
-        font-size: 10vw;
+        font-size: 8vw;
         margin-bottom: 40px;
         text-align: center;
         font-weight: 800;
+        font-family: var(--font-durkwide);
     }
 
     &__title-group {
+        width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-left: 28px;
+        padding: 0 20px;
 
         & >:first-child {
             white-space: nowrap;
@@ -53,6 +54,17 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 30px;
 
+        @media (max-width: $tablet-pro) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @media (max-width: $tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: $phone) {
+            grid-template-columns: 1fr;
+        }
+
         &__card {
             width: 100%;
             height: fit-content;
@@ -76,18 +88,17 @@
                 transition: 0.4s;
 
                 &__info {
+                    @extend %title-14;
                     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
                     background: #121212;
                     color: #fff;
-                    line-height: 140%;
                     height: 100%;
                     padding: 20px;
-                    font-size: 14px;
                 }
             }
 
             &__title {
-                font-size: 14px;
+                @extend %title-14;
                 font-weight: 500;
                 margin-bottom: 4px;
                 line-height: 120%;
@@ -103,8 +114,7 @@
                 padding-left: 10px;
             }
             &__date {
-                font-size: 14px;
-                font-weight: 400;
+                @extend %title-14;
                 padding-left: 10px;
             }
 

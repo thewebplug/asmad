@@ -1,0 +1,137 @@
+.why {
+    width: 100%;
+   
+    background: #ADB0AB;
+
+    &__inner {
+        max-width: 1200px;
+        padding: 100px 20px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 40px;
+            padding-bottom: 300px;
+
+            @media (max-width: $tablet) {
+                grid-template-columns: 1fr;
+                padding: 80px 20px;
+              }
+
+
+
+        &__title {
+            @extend %title-24;
+            margin-bottom: 20px;
+            margin-top: 140px;
+
+            @media (max-width: $tablet) {
+                margin-top: 0;
+              }
+
+        }
+        &__subtitle {
+            @extend %title-14;
+            width: 100%;
+            max-width: 260ch;
+        }
+    
+        &__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+
+            @media (max-width: $phone) {
+                grid-template-columns: 1fr;
+            }
+    
+            &__card {
+                display: flex;
+                gap: 20px;
+                width: 100%;
+                padding: 32px 20px;
+                background: #BDBFBA;
+            border: 1px solid #D0D3CF;
+            position: relative;
+                // border: 1px solid #D0D3CF;
+                // border: 1px solid #121212;
+                // border-radius: 8px;
+
+                & > svg {
+                    min-width: 50px;
+                }
+    
+    
+                &__title {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    margin-bottom: 8px;
+                    color: #121212;
+                    
+                }
+                &__subtitle {
+                    @extend %title-14;
+                }
+
+                &__number {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #121212;
+                    color: #fff;
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+
+
+            }
+
+            & >:nth-child(2) {
+                background: #2D8E95 !important;
+                color: #ADB0AB !important;
+                border: none !important;
+
+                .why__inner__grid__card__title {
+                color: #ADB0AB !important;
+                }
+
+                .why__inner__grid__card__number {
+                    background: #ADB0AB !important;
+                    color: #121212 !important;
+
+                    border-right: 1px solid #121212;
+                    border-top: 1px solid #121212;
+
+                }
+
+            }
+
+            & >:nth-child(3) {
+                background: #121212 !important;
+                color: #ADB0AB !important;
+                border: none !important;
+
+                .why__inner__grid__card__title {
+                    color: #ADB0AB !important;
+                    }
+
+                .why__inner__grid__card__number {
+                    background: #ADB0AB !important;
+                    color: #121212 !important;
+                    border-right: 1px solid #121212;
+                    border-top: 1px solid #121212;
+                }
+            }
+
+            
+        }
+    }
+
+    // align-items: center;
+
+    
+}

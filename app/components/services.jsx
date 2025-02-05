@@ -1,26 +1,29 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Services() {
   return (
-    <div className="services">
+    <div className="services" id="services">
       <div className="services__inner">
         <div className="services__inner__title">What we offer</div>
 
         <div className="services__inner__grid services__inner__grid1">
           <div className="services__inner__grid__item1">
             <div className="services__inner__grid__item__subtitle">
-              Lorem Ipsum has been the industry's standard{" "}
+              Construction, Finishing & Furnishing, Maintenance
             </div>
             <div className="services__inner__grid__item__title">
-            Engineering Construction & Design 
-
+              Engineering Construction & Design
             </div>
-            <div className="services__inner__grid__item__subsubtitle">
-              contact us
-            </div>
+            <Link
+              href="/engineering"
+              prefetch={true}
+              className="services__inner__grid__item__subsubtitle"
+            >
+              see more
+            </Link>
             <img
               className="services__inner__grid__item__img services__inner__grid__item1__img"
-              src="/assets/building 3.jpg"
+              src="https://res.cloudinary.com/thewebplug/image/upload/v1738783933/maybe-hero_nucxsj.jpg"
               alt=""
               width={100}
               height={100}
@@ -28,31 +31,37 @@ export default function Services() {
           </div>
           <div className="services__inner__grid__item2">
             <div className="services__inner__grid__item__subtitle">
-              Lorem Ipsum has been the industry's{" "}
+           Seamless project execution with clear planning
             </div>
             <div className="services__inner__grid__item__title">
-            Project Management
-
+              Project Management
             </div>
-            <div className="services__inner__grid__item__subsubtitle">
-              contact us
-            </div>
+            <Link
+              href="/management"
+              prefetch={true}
+              className="services__inner__grid__item__subsubtitle"
+            >
+              see more
+            </Link>
           </div>
           <div className="services__inner__grid__item2">
             <div className="services__inner__grid__item__subtitle">
-              Lorem Ipsum has been the industry's{" "}
+            Our supply chain solutions ensure delivery of top-quality.
             </div>
             <div className="services__inner__grid__item__title">
-            Supply of Integrated Services 
-
+              Supply of Integrated Services
             </div>
-            <div className="services__inner__grid__item__subsubtitle">
-              contact us
-            </div>
+            <Link
+              href="/supply"
+              prefetch={true}
+              className="services__inner__grid__item__subsubtitle"
+            >
+              see more
+            </Link>
 
-            <img
-              className="services__inner__grid__item__img services__inner__grid__item2__img"
-              src="/assets/building 3.jpg"
+           <img
+              className="services__inner__grid__item__img services__inner__grid__item1__img"
+              src="https://res.cloudinary.com/thewebplug/image/upload/v1738783933/maybe-hero_nucxsj.jpg"
               alt=""
               width={100}
               height={100}
@@ -62,18 +71,22 @@ export default function Services() {
         <div className="services__inner__grid services__inner__grid2">
           <div className="services__inner__grid__item2">
             <div className="services__inner__grid__item__subtitle">
-              Lorem Ipsum has been the industry's{" "}
+            We provide expert oversight, ensuring projects meet industry standards.
             </div>
             <div className="services__inner__grid__item__title">
-            Supervision
+              Supervision
             </div>
-            <div className="services__inner__grid__item__subsubtitle">
-              contact us
-            </div>
+            <Link
+              href="/supervision"
+              prefetch={true}
+              className="services__inner__grid__item__subsubtitle"
+            >
+              see more
+            </Link>
 
-            <img
-              className="services__inner__grid__item__img services__inner__grid__item2__img"
-              src="/assets/building 3.jpg"
+           <img
+              className="services__inner__grid__item__img services__inner__grid__item1__img"
+              src="https://res.cloudinary.com/thewebplug/image/upload/v1738783933/maybe-hero_nucxsj.jpg"
               alt=""
               width={100}
               height={100}
@@ -81,19 +94,22 @@ export default function Services() {
           </div>
           <div className="services__inner__grid__item2">
             <div className="services__inner__grid__item__subtitle">
-              Lorem Ipsum has been the industry's{" "}
+            Our consultancy services promote sustainability and regulatory compliance
             </div>
             <div className="services__inner__grid__item__title">
-            Environmental Consultancy
-
+              Environmental Consultancy
             </div>
-            <div className="services__inner__grid__item__subsubtitle">
-              contact us
-            </div>
+            <Link
+              href="/consultancy"
+              prefetch={true}
+              className="services__inner__grid__item__subsubtitle"
+            >
+              see more
+            </Link>
 
-            <img
-              className="services__inner__grid__item__img services__inner__grid__item2__img"
-              src="/assets/building 3.jpg"
+           <img
+              className="services__inner__grid__item__img services__inner__grid__item1__img"
+              src="https://res.cloudinary.com/thewebplug/image/upload/v1738783933/maybe-hero_nucxsj.jpg"
               alt=""
               width={100}
               height={100}
@@ -101,19 +117,21 @@ export default function Services() {
           </div>
           <div className="services__inner__grid__item2">
             <div className="services__inner__grid__item__subtitle">
-              Lorem Ipsum has been the industry's{" "}
+            Construction, Finishing & Furnishing, Maintenance
             </div>
             <div className="services__inner__grid__item__title">
-            Engineering Construction & Design 
-
+              Engineering Construction & Design
             </div>
-            <div className="services__inner__grid__item__subsubtitle">
-              contact us
-            </div>
+            <Link
+              href="/engineering"
+              className="services__inner__grid__item__subsubtitle"
+            >
+              see more
+            </Link>
 
-            <img
-              className="services__inner__grid__item__img services__inner__grid__item2__img"
-              src="/assets/building 3.jpg"
+           <img
+              className="services__inner__grid__item__img services__inner__grid__item1__img"
+              src="https://res.cloudinary.com/thewebplug/image/upload/v1738783933/maybe-hero_nucxsj.jpg"
               alt=""
               width={100}
               height={100}
@@ -121,19 +139,21 @@ export default function Services() {
           </div>
           <div className="services__inner__grid__item2">
             <div className="services__inner__grid__item__subtitle">
-              Lorem Ipsum has been the industry's{" "}
+           Seamless project execution with clear planning
             </div>
             <div className="services__inner__grid__item__title">
-            Project Management
-
+              Project Management
             </div>
-            <div className="services__inner__grid__item__subsubtitle">
-              contact us
-            </div>
+            <Link
+              href="/management"
+              className="services__inner__grid__item__subsubtitle"
+            >
+              see more
+            </Link>
 
-            <img
-              className="services__inner__grid__item__img services__inner__grid__item2__img"
-              src="/assets/building 3.jpg"
+           <img
+              className="services__inner__grid__item__img services__inner__grid__item1__img"
+              src="https://res.cloudinary.com/thewebplug/image/upload/v1738783933/maybe-hero_nucxsj.jpg"
               alt=""
               width={100}
               height={100}

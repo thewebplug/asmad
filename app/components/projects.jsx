@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ProjectCard from "./projectCard";
 import Link from "next/link";
+import projects from "../utils/projects";
 
 export default function ProjectsComponent() {
   return (
@@ -9,17 +10,15 @@ export default function ProjectsComponent() {
         <Link href="/projects" prefetch={true}>OUR PROJECTS</Link>
 
         <div className="projects__slide-buttons">
-          <Image
+          <Image alt=""
             src="/assets/icons/left-arrow.svg"
             width={60}
             height={60}
-            alt=""
           />
-          <Image
+          <Image alt=""
             src="/assets/icons/right-arrow.svg"
             width={60}
             height={60}
-            alt=""
           />
         </div>
       </div>
@@ -29,48 +28,12 @@ export default function ProjectsComponent() {
         </div> */}
 
       <div className="projects__slide">
-        <ProjectCard
-          title="Lorem Ipsum is simply dummy text"
-          subtitle="Oil and gas"
-          date="2022-2024"
-          image="/assets/building 1.jpg"
-        />
-        <ProjectCard
-          title="Guzape filling station"
-          subtitle="Oil and gas"
-          date="2022-2024"
-          image="/assets/building 2.jpg"
-        />
-        <ProjectCard
-          title="Lorem Ipsum is simply dummy text"
-          subtitle="Oil and gas"
-          date="2022-2024"
-          image="/assets/building 7.jpg"
-        />
-        <ProjectCard
-          title="Lorem Ipsum is simply dummy text"
-          subtitle="Oil and gas"
-          date="2022-2024"
-          image="/assets/building 4.jpg"
-        />
-        <ProjectCard
-          title="Lorem Ipsum is simply dummy text"
-          subtitle="Oil and gas"
-          date="2022-2024"
-          image="/assets/building 8.jpg"
-        />
-        <ProjectCard
-          title="Lorem Ipsum is simply dummy text"
-          subtitle="Oil and gas"
-          date="2022-2024"
-          image="/assets/building 3.jpg"
-        />
-        <ProjectCard
-          title="Lorem Ipsum is simply dummy text"
-          subtitle="Oil and gas"
-          date="2022-2024"
-          image="/assets/building 5.jpg"
-        />
+      {projects?.map((project) => <ProjectCard
+          title={project?.title}
+          subtitle={project?.subtitle}
+          date={project?.date}
+          image={project?.image}
+        />)}
       </div>
     </>
   );

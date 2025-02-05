@@ -1,6 +1,7 @@
 import "../styles/index.scss";
-import { Inter, Syne } from "next/font/google";
+import { Inter, Syne, Geist } from "next/font/google";
 import localFont from "next/font/local";
+import Footer from "./components/footer";
 
 export const metadata = {
   title: "Detty December",
@@ -28,16 +29,24 @@ const syne = Syne({
   display: "swap",
   variable: "--font-syne",
 });
+const geist = Geist({
+  weight: ["400", "500", "600", "700", "800"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-geist",
+});
 
 export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
       className={`
-        
-       ${syne.variable} ${inter.variable} ${durkWide.variable}`}
+       ${syne.variable} ${inter.variable} ${geist.variable} ${durkWide.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

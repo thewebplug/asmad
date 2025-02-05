@@ -1,4 +1,4 @@
-import Image from "next/image";
+import OptimizedImage from "./optimizedImage";
 
 export default function Team() {
   return (
@@ -16,7 +16,21 @@ result to our clients first time, every time.
           <div className="team__slide__card__bg">
 
             <div className="team__slide__card__bg__img">
-            <Image src={"/assets/hipp.jpg"} objectFit="cover" layout="fill" alt="" />
+            <OptimizedImage alt="" src={"https://res.cloudinary.com/thewebplug/image/upload/v1738783643/ceo_dbntlg.jpg"} objectFit="cover" layout="fill" />
+            </div>
+          </div>
+
+          <div className="team__slide__card__title">Idris Abdulsamad Yusuf</div>
+          <div className="team__slide__card__role">
+            CEO
+            <i></i>
+          </div>
+        </div>
+      <div className="team__slide__card">
+          <div className="team__slide__card__bg">
+
+            <div className="team__slide__card__bg__img">
+            <OptimizedImage alt="" src={"https://res.cloudinary.com/thewebplug/image/upload/v1738783643/alex_wwynrg.jpg"} objectFit="cover" layout="fill" />
             </div>
           </div>
 
@@ -31,7 +45,7 @@ result to our clients first time, every time.
           <div className="team__slide__card__bg">
 
             <div className="team__slide__card__bg__img">
-            <Image src={"/assets/alex.jpg"} objectFit="cover" layout="fill" alt="" />
+            <OptimizedImage alt="" src={"https://res.cloudinary.com/thewebplug/image/upload/v1738783641/hipp_s5thyp.jpg"} objectFit="cover" layout="fill" />
             </div>
           </div>
 
@@ -42,25 +56,12 @@ result to our clients first time, every time.
           </div>
         </div>
      
-        <div className="team__slide__card">
-          <div className="team__slide__card__bg">
-
-            <div className="team__slide__card__bg__img">
-            <Image src={"/assets/christian.jpg"} objectFit="cover" layout="fill" alt="" />
-            </div>
-          </div>
-
-          <div className="team__slide__card__title">Lorem ipsum</div>
-          <div className="team__slide__card__role">
-            Lorem Ipsum is simply dummy
-            <i></i>
-          </div>
-        </div>
+      
       <div className="team__slide__card">
           <div className="team__slide__card__bg">
 
             <div className="team__slide__card__bg__img">
-            <Image src={"/assets/hipp.jpg"} objectFit="cover" layout="fill" alt="" />
+            <OptimizedImage alt="" src={"https://res.cloudinary.com/thewebplug/image/upload/v1738783643/alex_wwynrg.jpg"} objectFit="cover" layout="fill" />
             </div>
           </div>
 
@@ -75,7 +76,7 @@ result to our clients first time, every time.
           <div className="team__slide__card__bg">
 
             <div className="team__slide__card__bg__img">
-            <Image src={"/assets/alex.jpg"} objectFit="cover" layout="fill" alt="" />
+            <OptimizedImage alt="" src={"https://res.cloudinary.com/thewebplug/image/upload/v1738783641/hipp_s5thyp.jpg"} objectFit="cover" layout="fill" />
             </div>
           </div>
 
@@ -90,7 +91,7 @@ result to our clients first time, every time.
           <div className="team__slide__card__bg">
 
             <div className="team__slide__card__bg__img">
-            <Image src={"/assets/christian.jpg"} objectFit="cover" layout="fill" alt="" />
+            <OptimizedImage alt="" src={"https://res.cloudinary.com/thewebplug/image/upload/v1738783643/alex_wwynrg.jpg"} objectFit="cover" layout="fill" />
             </div>
           </div>
 

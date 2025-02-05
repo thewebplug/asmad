@@ -1,96 +1,27 @@
 import ProjectCard from "@/app/components/projectCard";
+import projects from "../utils/projects";
+import Header from "../components/header";
 
 export default function Projects() {
   return (
     <>
+    <Header dark={true} />
       <main className="projects">
         <div className="projects__title">OUR PROJECTS</div>
 
         <div className="projects__grid">
-          <ProjectCard
-            title="Lorem Ipsum is simply dummy text"
-            subtitle="Oil and gas"
-            date="2022-2024"
-            image="/assets/building 1.jpg"
-          />
-          <ProjectCard
-            title="Guzape filling station"
-            subtitle="Oil and gas"
-            date="2022-2024"
-            image="/assets/building 2.jpg"
-          />
-          <ProjectCard
-            title="Lorem Ipsum is simply dummy text"
-            subtitle="Oil and gas"
-            date="2022-2024"
-            image="/assets/building 7.jpg"
-          />
-          <ProjectCard
-            title="Lorem Ipsum is simply dummy text"
-            subtitle="Oil and gas"
-            date="2022-2024"
-            image="/assets/building 4.jpg"
-          />
-          <ProjectCard
-            title="Lorem Ipsum is simply dummy text"
-            subtitle="Oil and gas"
-            date="2022-2024"
-            image="/assets/building 8.jpg"
-          />
-          <ProjectCard
-            title="Lorem Ipsum is simply dummy text"
-            subtitle="Oil and gas"
-            date="2022-2024"
-            image="/assets/building 3.jpg"
-          />
-          <ProjectCard
-            title="Lorem Ipsum is simply dummy text"
-            subtitle="Oil and gas"
-            date="2022-2024"
-            image="/assets/building 5.jpg"
-          />
-           <ProjectCard
-            title="Lorem Ipsum is simply dummy text"
-            subtitle="Oil and gas"
-            date="2022-2024"
-            image="/assets/building 1.jpg"
-          />
-          <ProjectCard
-            title="Guzape filling station"
-            subtitle="Oil and gas"
-            date="2022-2024"
-            image="/assets/building 2.jpg"
-          />
-          <ProjectCard
-            title="Lorem Ipsum is simply dummy text"
-            subtitle="Oil and gas"
-            date="2022-2024"
-            image="/assets/building 7.jpg"
-          />
-          <ProjectCard
-            title="Lorem Ipsum is simply dummy text"
-            subtitle="Oil and gas"
-            date="2022-2024"
-            image="/assets/building 4.jpg"
-          />
-          <ProjectCard
-            title="Lorem Ipsum is simply dummy text"
-            subtitle="Oil and gas"
-            date="2022-2024"
-            image="/assets/building 8.jpg"
-          />
-          <ProjectCard
-            title="Lorem Ipsum is simply dummy text"
-            subtitle="Oil and gas"
-            date="2022-2024"
-            image="/assets/building 3.jpg"
-          />
-          <ProjectCard
-            title="Lorem Ipsum is simply dummy text"
-            subtitle="Oil and gas"
-            date="2022-2024"
-            image="/assets/building 5.jpg"
-          />
+          {projects?.map((project) => <ProjectCard
+                    title={project?.title}
+                    subtitle={project?.subtitle}
+                    date={project?.date}
+                    image={project?.image}
+                  />)}
+          {projects?.map((project) => <ProjectCard
+                    title={project?.title}
+                    subtitle={project?.subtitle}
+                    date={project?.date}
+                    image={project?.image}
+                  />)}
         </div>
       </main>
     </>
