@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import Image from "next/image";
 
-export default function Header({ dark }) {
-  const pathname = usePathname();
+// Separate the part that uses useSearchParams into its own component
+function HeaderContent({ dark, pathname }) {
   const searchParams = useSearchParams();
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -24,7 +24,7 @@ export default function Header({ dark }) {
 
   useEffect(() => {
     const hash = window.location.hash;
-    const cardId = hash.substring(1); // Remove the "#" symbol from the hash
+    const cardId = hash.substring(1);
 
     if (cardId) {
       const cardElement = document.getElementById(cardId);
@@ -41,8 +41,8 @@ export default function Header({ dark }) {
       <Link href="/" className="header__logo">
         <Image alt="" src="/assets/logo-asmad.png" width={60} height={50} />
         <div>
-        SMAD <br />
-        INTEGRATED SERVICES
+          SMAD <br />
+          INTEGRATED SERVICES
         </div>
       </Link>
       <nav>
@@ -64,7 +64,17 @@ export default function Header({ dark }) {
       <div className="header__buttons">
         <button>Contact us</button>
       </div>
-     
     </header>
+  );
+}
+
+// Main Header component with Suspense boundary
+export default function Header({ dark }) {
+  const pathname = usePathname();
+
+  return (
+    <Suspense fallback={<div className="header-loading">Loading...</div>}>
+      <HeaderContent dark={dark} pathname={pathname} />
+    </Suspense>
   );
 }
