@@ -3,10 +3,6 @@ import { Inter, Syne, Geist } from "next/font/google";
 import localFont from "next/font/local";
 import Footer from "./components/footer";
 
-export const metadata = {
-  title: "Detty December",
-  description: "Discover and book unforgettable festive events",
-};
 
 const durkWide = localFont({
   src: "../public/assets/DrukWideBold.ttf",

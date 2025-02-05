@@ -6,6 +6,17 @@ import projects from "../utils/projects";
 import ProjectCard from "../components/projectCard";
 import Header from "../components/header";
 import OptimizedImage from "../components/optimizedImage";
+
+export async function generateMetadata() {
+  return {
+    title: "General Construction",
+    description:
+      "ASMAD INTEGRATED SERVICES LTD has three divisions to cover all aspects of construction",
+  };
+}
+
+
+
 export default function GeneralConstruction() {
   return (
     <>
@@ -15,7 +26,7 @@ export default function GeneralConstruction() {
           General <span>Construction</span>
         </div>
         <div className="general__subtitle">
-          ASMAD INTEGRATED SERVICES LTD hasthree divisions to cover all aspects
+          ASMAD INTEGRATED SERVICES LTD has three divisions to cover all aspects
           of construction:
         </div>
 

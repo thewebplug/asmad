@@ -5,6 +5,15 @@ import IntegrityBlack from "@/public/assets/icons/integrityBlack.svg";
 import CoreValues from "../components/coreValues";
 import CorporatePhilosophy from "../components/corporatePhilosophy";
 
+export async function generateMetadata() {
+  return {
+    title: "About ASMAD Integrated Services Limited",
+    description:
+      "ASMAD INTEGRATED SERVICES LIMITED began as a general works contractor in 2024",
+  };
+}
+
+
 export default function Project() {
   return (
     <>
