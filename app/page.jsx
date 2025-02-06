@@ -7,6 +7,7 @@ import VisionAndMission from './components/visionAndMission';
 import Clients from './components/clients';
 import ContactUs from './components/contactUs';
 import Header from './components/header';
+import OptimizedImage from './components/optimizedImage';
 
 export async function generateMetadata() {
   return {
@@ -27,7 +28,7 @@ export default function Home() {
       
       <div className="home__hero">
         <div className="home__hero__background">
-
+<OptimizedImage src="/assets/maybe-hero.jpg" objectFit="cover" layout="fill" />
         </div>
         <div className="home__hero__inner">
 

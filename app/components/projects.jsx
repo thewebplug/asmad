@@ -28,11 +28,12 @@ export default function ProjectsComponent() {
         </div> */}
 
       <div className="projects__slide">
-      {projects?.map((project) => <ProjectCard
+      {projects?.map((project, index) => <ProjectCard
           title={project?.title}
           subtitle={project?.subtitle}
           date={project?.date}
           image={project?.image}
+          key={index}
         />)}
       </div>
     </>

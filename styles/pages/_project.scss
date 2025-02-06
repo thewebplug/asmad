@@ -25,6 +25,10 @@
         border-radius: 12px;
         object-fit: cover;
         margin-bottom: 40px;
+
+        @media (max-width: $phone) {
+            height: 150px;
+        }
     }
 
     &__subtitle {

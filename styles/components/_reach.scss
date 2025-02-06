@@ -50,7 +50,12 @@ grid-template-columns: 1fr 1.6fr;
     }
     &__subsubtitle {
         margin-bottom: 16px;
+        line-height: 140%
 
+    }
+
+    & > button {
+      @extend %primary-button;
     }
   }
 

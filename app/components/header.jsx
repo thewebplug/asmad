@@ -71,31 +71,31 @@ function HeaderContent({ dark, pathname }) {
         xmlns="http://www.w3.org/2000/svg"
         onClick={() => setOpen(true)}
       >
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g
           id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         ></g>
         <g id="SVGRepo_iconCarrier">
           {" "}
           <path
             d="M20 7L4 7"
             stroke="#000"
-            stroke-width="1.5"
-            stroke-linecap="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
           ></path>{" "}
           <path
             d="M20 12L4 12"
             stroke="#000"
-            stroke-width="1.5"
-            stroke-linecap="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
           ></path>{" "}
           <path
             d="M20 17L4 17"
             stroke="#000"
-            stroke-width="1.5"
-            stroke-linecap="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
           ></path>{" "}
         </g>
       </svg>{" "}
@@ -109,21 +109,21 @@ function HeaderContent({ dark, pathname }) {
           INTEGRATED <br /> SERVICES
         </div>
       </Link>
-      
+
             <svg
               className="header__hamburger"
               onClick={() => setOpen(false)}
               viewBox="0 0 64 64"
               xmlns="http://www.w3.org/2000/svg"
-              stroke-width="4.8"
+              strokeWidth="4.8"
               stroke="#000000"
               fill="none"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></g>
               <g id="SVGRepo_iconCarrier">
                 <line x1="8.06" y1="8.06" x2="55.41" y2="55.94"></line>

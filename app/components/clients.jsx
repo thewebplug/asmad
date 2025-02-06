@@ -1,5 +1,6 @@
 "use client"
 import { useEffect, useState } from "react";
+import OptimizedImage from "./optimizedImage";
 
 const clients = [
   {
@@ -52,7 +53,7 @@ export default function Clients() {
         <div className="clients__title">Our Satisfied <span>Clients</span></div>
       <div className="clients__slider">
         {duplicatedItems?.map((testimonial, index) => 
-                  <img src={testimonial?.image} key={index} alt="" />
+                  <OptimizedImage width={100} height={100} src={testimonial?.image} key={index} alt="" />
 
         )}
        

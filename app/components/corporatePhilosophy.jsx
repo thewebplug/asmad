@@ -1,3 +1,5 @@
+import OptimizedImage from "./optimizedImage";
+
 export default function CorporatePhilosophy() {
   return (
     <div className="unlock">
@@ -8,7 +10,9 @@ export default function CorporatePhilosophy() {
         <div className="unlock__card1__subtitle">
           Our Project Management and Execution Philosophy:
         </div>
-        <img
+        <OptimizedImage
+        width={430}
+        height={241.93}
           className="unlock__card1__img"
           src={"/assets/maybe-hero.jpg"}
           alt=""
@@ -29,7 +33,7 @@ export default function CorporatePhilosophy() {
               <path
                 d="M2 6.27757L4.38766 8.73575L10 3"
                 stroke="#2D8E95"
-                stroke-width="1.09252"
+                strokeWidth="1.09252"
               />
             </svg>
 
@@ -50,7 +54,7 @@ export default function CorporatePhilosophy() {
               <path
                 d="M2 6.27757L4.38766 8.73575L10 3"
                 stroke="#2D8E95"
-                stroke-width="1.09252"
+                strokeWidth="1.09252"
               />
             </svg>
 
@@ -71,7 +75,7 @@ export default function CorporatePhilosophy() {
               <path
                 d="M2 6.27757L4.38766 8.73575L10 3"
                 stroke="#2D8E95"
-                stroke-width="1.09252"
+                strokeWidth="1.09252"
               />
             </svg>
 
@@ -92,7 +96,7 @@ export default function CorporatePhilosophy() {
               <path
                 d="M2 6.27757L4.38766 8.73575L10 3"
                 stroke="#2D8E95"
-                stroke-width="1.09252"
+                strokeWidth="1.09252"
               />
             </svg>
 
@@ -112,7 +116,7 @@ export default function CorporatePhilosophy() {
               <path
                 d="M2 6.27757L4.38766 8.73575L10 3"
                 stroke="#2D8E95"
-                stroke-width="1.09252"
+                strokeWidth="1.09252"
               />
             </svg>
 

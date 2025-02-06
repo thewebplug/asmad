@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "./optimizedImage";
 
 export default function Services() {
   return (
@@ -21,13 +22,18 @@ export default function Services() {
             >
               see more
             </Link>
-            <img
-              className="services__inner__grid__item__img services__inner__grid__item1__img"
+            <div
+                          className="services__inner__grid__item__img services__inner__grid__item1__img"
+
+            >
+            <OptimizedImage
               src="https://res.cloudinary.com/thewebplug/image/upload/v1738783933/maybe-hero_nucxsj.jpg"
               alt=""
-              width={100}
-              height={100}
+             objectFit="cover"
+             layout="fill"
             />
+              
+            </div>
           </div>
           <div className="services__inner__grid__item2">
             <div className="services__inner__grid__item__subtitle">
@@ -59,13 +65,18 @@ export default function Services() {
               see more
             </Link>
 
-           <img
-              className="services__inner__grid__item__img services__inner__grid__item1__img"
+              <div
+                          className="services__inner__grid__item__img services__inner__grid__item1__img"
+
+            >
+            <OptimizedImage
               src="https://res.cloudinary.com/thewebplug/image/upload/v1738783933/maybe-hero_nucxsj.jpg"
               alt=""
-              width={100}
-              height={100}
+             objectFit="cover"
+             layout="fill"
             />
+              
+            </div>
           </div>
         </div>
         <div className="services__inner__grid services__inner__grid2">
@@ -84,13 +95,18 @@ export default function Services() {
               see more
             </Link>
 
-           <img
-              className="services__inner__grid__item__img services__inner__grid__item1__img"
+              <div
+                          className="services__inner__grid__item__img services__inner__grid__item1__img"
+
+            >
+            <OptimizedImage
               src="https://res.cloudinary.com/thewebplug/image/upload/v1738783933/maybe-hero_nucxsj.jpg"
               alt=""
-              width={100}
-              height={100}
+             objectFit="cover"
+             layout="fill"
             />
+              
+            </div>
           </div>
           <div className="services__inner__grid__item2">
             <div className="services__inner__grid__item__subtitle">
@@ -107,13 +123,18 @@ export default function Services() {
               see more
             </Link>
 
-           <img
-              className="services__inner__grid__item__img services__inner__grid__item1__img"
+              <div
+                          className="services__inner__grid__item__img services__inner__grid__item1__img"
+
+            >
+            <OptimizedImage
               src="https://res.cloudinary.com/thewebplug/image/upload/v1738783933/maybe-hero_nucxsj.jpg"
               alt=""
-              width={100}
-              height={100}
+             objectFit="cover"
+             layout="fill"
             />
+              
+            </div>
           </div>
           <div className="services__inner__grid__item2">
             <div className="services__inner__grid__item__subtitle">
@@ -129,13 +150,18 @@ export default function Services() {
               see more
             </Link>
 
-           <img
-              className="services__inner__grid__item__img services__inner__grid__item1__img"
+              <div
+                          className="services__inner__grid__item__img services__inner__grid__item1__img"
+
+            >
+            <OptimizedImage
               src="https://res.cloudinary.com/thewebplug/image/upload/v1738783933/maybe-hero_nucxsj.jpg"
               alt=""
-              width={100}
-              height={100}
+             objectFit="cover"
+             layout="fill"
             />
+              
+            </div>
           </div>
           <div className="services__inner__grid__item2">
             <div className="services__inner__grid__item__subtitle">
@@ -151,13 +177,18 @@ export default function Services() {
               see more
             </Link>
 
-           <img
-              className="services__inner__grid__item__img services__inner__grid__item1__img"
+              <div
+                          className="services__inner__grid__item__img services__inner__grid__item1__img"
+
+            >
+            <OptimizedImage
               src="https://res.cloudinary.com/thewebplug/image/upload/v1738783933/maybe-hero_nucxsj.jpg"
               alt=""
-              width={100}
-              height={100}
+             objectFit="cover"
+             layout="fill"
             />
+              
+            </div>
           </div>
         </div>
       </div>
