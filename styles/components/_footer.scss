@@ -36,6 +36,10 @@ color: #aaa;
           margin-bottom: 32px;
           width: 100%;
           max-width: 80ch;
+
+          & > span {
+            font-weight: 900;
+          }
         }
 
         &__social-groups {

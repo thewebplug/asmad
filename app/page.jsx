@@ -50,6 +50,7 @@ export default function Home() {
       <VisionAndMission />
        <Team />
       <ContactUs /> 
+
      
     </main>
 

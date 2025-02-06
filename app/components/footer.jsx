@@ -15,7 +15,14 @@ export default function Footer() {
                 INTEGRATED <br /> SERVICES
               </div>       
          <div className="footer__inner__flex__logo__subtitle">
+         <span>RC: 7905453</span> <br /> <br />
             Project Management, Engineering Construction & Design, Supply of Integrated Services, Supervision, Environmental Consultancy
+
+            <br />
+            <br />
+            <span>Address:</span> Gwandal Center Plot 1015,
+Fria Close Near EFCC Wuse 2, Abuja
+
             </div>
             <div className="footer__inner__flex__logo__social-groups">
               <svg
@@ -95,7 +102,10 @@ export default function Footer() {
               </svg>
             </div>
             <div className="footer__inner__flex__logo__email">
-              contact@asmadintegratedservices.com
+            TEL: +2348100265352, +2348126702056
+            <br />
+              <br />
+              abdul_id@yahoo.com
             </div>
           </div>
 

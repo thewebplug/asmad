@@ -4,6 +4,7 @@ import ProjectsComponent from "../components/projects";
 import IntegrityBlack from "@/public/assets/icons/integrityBlack.svg";
 import CoreValues from "../components/coreValues";
 import CorporatePhilosophy from "../components/corporatePhilosophy";
+import Certifications from "../components/certifications";
 
 export async function generateMetadata() {
   return {
@@ -131,6 +132,8 @@ export default function Project() {
           that only the most experienced and qualified people are serving them,
           at all times.
         </div>
+
+        <Certifications />
       </div>
       <ProjectsComponent />
     </>

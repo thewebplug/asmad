@@ -1,0 +1,86 @@
+$color-neutral-light: #ADB0AB;
+$color-neutral-medium: #BDBFBA;
+$color-accent: #2D8E95;
+
+.modal {
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+  &__container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 1001;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: $color-accent;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 60px;
+
+    &:hover {
+      background-color: darken($color-accent, 10%);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: darken($color-neutral-medium, 40%);
+    padding: 20px;
+  }
+
+  &__title {
+    font-size: 32px;
+    color: $color-accent;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    color: darken($color-neutral-medium, 30%);
+    margin-bottom: 40px;
+  }
+
+  &__action-btn {
+    background-color: $color-accent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($color-accent, 10%);
+    }
+  }
+}
