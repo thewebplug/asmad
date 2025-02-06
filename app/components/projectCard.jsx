@@ -1,11 +1,10 @@
-"use client"
 import OptimizedImage from "./optimizedImage";
 
 export default function ProjectCard({title, subtitle, date, image}) {
   return (
     <div className="projects__grid__card">
     <div className="projects__grid__card__cover">
-    <OptimizedImage alt="" src={image} objectFit="cover" layout="fill" alt="" />
+    <OptimizedImage alt="" src={image} objectFit="cover" layout="fill" />
       <div className="projects__grid__card__cover__info">
         <div className="projects__grid__card__cover__info__title">
           Lorem ipsum
